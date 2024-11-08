@@ -41,7 +41,7 @@ namespace GithubActionsLab
                             loop = false;
                             continue;
                         default:
-                            throw new ArgumentException("You did not select a valid option!");
+                            return Math.Pow(double.Parse(x), double.Parse(y));
                     }
 
                     var x = GetInput("Enter x: ");
