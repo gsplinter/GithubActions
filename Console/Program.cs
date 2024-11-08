@@ -41,7 +41,7 @@ namespace GithubActionsLab
                             loop = false;
                             continue;
                         default:
-                            return Math.Pow(double.Parse(x), double.Parse(y));
+                            throw new ArgumentException("You did not select a valid option!");
                     }
 
                     var x = GetInput("Enter x: ");
@@ -84,7 +84,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            return Math.Pow(double.Parse(x), double.Parse(y));
         }
     }
 
