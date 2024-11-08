@@ -97,7 +97,7 @@ namespace GithubActionsLab
         [Test]
         public void Subtract()
         {
-            Assert.AreEqual(45 Program.Subtract("90", "45"));
+            Assert.AreEqual(45, Program.Subtract("90", "45"));
             Assert.AreEqual(5, Program.Subtract("6", "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
     }
@@ -122,7 +122,7 @@ namespace GithubActionsLab
         [Test]
         public void Power()
         {
-            Assert.AreEqual(49,Program.Power("7", "2"));
+            Assert.AreEqual(49, Program.Power("7", "2"));
             Assert.AreEqual(4, Program.Power("4", "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
